@@ -18,7 +18,12 @@ kubectl apply ‑f nginx‑configmap.yaml
 kubectl apply ‑f redis‑deployment.yaml
 kubectl apply ‑f webapp‑deployment.yaml
 kubectl apply ‑f nginx‑deployment.yaml
+
+# port fowarding to access the application
+kubectl port‑forward svc/nginx 8080:8080
 ```
+
+
 
 # Deploying the application to kubernetes(minikube and argoCD)
 # Create a new application in argocd
