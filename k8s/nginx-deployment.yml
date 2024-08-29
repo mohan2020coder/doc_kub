@@ -38,10 +38,10 @@ kind: Service
 metadata:
   name: nginx
 spec:
+  type: NodePort               # Add this line to set the service type
   ports:
   - port: 8080
     targetPort: 80
-    nodePort: 30000
+    nodePort: 30000            # Specify the NodePort here
   selector:
     app: nginx
-
