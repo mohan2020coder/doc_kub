@@ -27,7 +27,7 @@ kubectl apply ‑f nginx‑deployment.yaml
 kubectl port-forward svc/argocd-server -n argocd 8081:443
 ```
 
-## portforwarted to 8081 use the browser to access it using 8081
+## portforwarded to 8081 use the browser to access it using 8081
 ## login to argocd using the username and password and create a new application
 
 ### Application: FLASKDEMO
